@@ -1,8 +1,17 @@
 body{
     margin: 2rem;
     text-align: center;
-    background-image: url(bug.jpg);
+    background-image: url(bugandpiglet.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
 }
+#countdown{
+    text-align: center;
+    margin: auto
+
+}
+
+
+
