@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword</title>
+    <link rel="stylesheet" href="crosswordstyles.css">
+
+    <script>
+        function checkAnswer(event) {
+            event.preventDefault(); // Prevent form submission
+            let answer = "'" + document.querySelector("input").value.trim() + "'"; // Get input value
+
+            for (let node of document.querySelectorAll("td")) {
+                if (node.className.indexOf(answer) >= 0) {
+                    node.style.color = "black"; // Correctly set color
+                }
+            }
+            document.querySelector("input").value="";
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Crossword Puzzle for Bug!</h1>
+    <p>
+        <a href="./countdown.html">
+            <button style="font-size: 20; background-color: #CA71BB; color: black; border-radius: 25px;">return</button>
+        </a>
+    </p>
+    <table class="table1">
+        <tr>
+            <td></td>
+            <td class="'five'"><sup>4</sup>F</td>
+            <td class="'five'">I</td>
+            <td class="'five'">V</td>
+            <td class="'everything' 'five'"><sup>4</sup>E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td class="'everything'">V</td>
+            <td></td>
+            <td class="'stars'"><sup>3</sup>S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'everything'">E</td>
+            <td></td>
+            <td class="'stars'">T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'jets' 'jr'"><sup>1</sup>J</td>
+            <td class="'everything'">R</td>
+            <td></td>
+            <td class="'stars'">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="'careyprice' 'cub'"><sup>2</sup>C</td>
+            <td class="'careyprice'">A</td>
+            <td class="'jr' 'careyprice'">R</td>
+            <td class="'jets' 'careyprice'">E</td>
+            <td class="'careyprice' 'everything'">Y</td>
+            <td class="'careyprice'">P</td>
+            <td class="'careyprice' 'stars'">R</td>
+            <td class="'careyprice'">I</td>
+            <td class="'careyprice' 'cuddle"><sup>5</sup>C</td>
+            <td class="'careyprice'">E</td>
+        </tr>
+        <tr>
+            <td class="'cub'">U</td>
+            <td></td>
+            <td></td>
+            <td class="'jets'">T</td>
+            <td class ="'everything'">T</td>
+            <td></td>
+            <td class="'stars'">S</td>
+            <td></td>
+            <td class="'cuddle'">U</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="'bbss' 'cub'"><sup>3</sup>B</td>
+            <td class="'bbss'">B</td>
+            <td class="'bbss'">S</td>
+            <td class="'jets' 'bbss'">S</td>
+            <td class ="'everything'">H</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'cuddle'">D</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'everything'">I</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'cuddle'">D</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'everything'">N</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'cuddle'">L</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'bug'"><sup>5</sup>B</td>
+            <td class="'bug'">U</td>
+            <td class ="'everything' 'bug'">G</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'cuddle'">E</td>
+            <td></td>
+        </tr>
+      
+    </table>
+    <h2>Enter Guess:</h2>
+    <form onsubmit="checkAnswer(event)">
+        <input type="text" placeholder="ur cute ;)" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <table class="table2">
+        <tr>
+            <td>Across</td>
+            <td>Down</td>
+        </tr>
+        <tr>
+            <td>1. Not Senior</td>
+            <td>1. I went to see this NFL team play in person</td>
+        </tr>
+        <tr>
+            <td nowrap>2. Favorite Hockey Player from my childhood</td>
+            <td>2. What do you call a young bear</td>
+
+
+        </tr>
+        <tr>
+            <td nowrap>3. Our Favorite Game</td>
+            <td>3. I love you to here and back</td>
+
+        </tr>
+
+        <tr>
+            <td nowrap>4. Biscotti's age</td>
+
+            <td>4. My Favorite thing about you</td>
+        </tr>
+
+        <tr>
+            <td>5.Snug as a ___ in a rug</td>
+            <td>5. December 7th 2023</td>
+        </tr>
+    </table>
+</body>
+</html>
