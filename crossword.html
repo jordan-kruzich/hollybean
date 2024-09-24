@@ -8,12 +8,12 @@
 
     <script>
         function checkAnswer(event) {
-            event.preventDefault(); // Prevent form submission
-            let answer = "'" + document.querySelector("input").value.trim() + "'"; // Get input value
+            event.preventDefault();
+            let answer = "'" + document.querySelector("input").value.trim() + "'";
 
             for (let node of document.querySelectorAll("td")) {
                 if (node.className.indexOf(answer) >= 0) {
-                    node.style.color = "black"; // Correctly set color
+                    node.style.color = "black";
                 }
             }
             document.querySelector("input").value="";
