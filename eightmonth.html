@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword</title>
+    <link rel="stylesheet" href="crosswordstyles.css">
+
+    <script>
+        function checkAnswer(event) {
+            event.preventDefault();
+            let answer = "'" + document.querySelector("input").value.trim() + "'";
+
+            for (let node of document.querySelectorAll("td")) {
+                if (node.className.indexOf(answer) >= 0) {
+                    node.style.color = "black";
+                }
+            }
+            document.querySelector("input").value="";
+        }
+    </script>
+
+</head>
+<body>
+    <h1>8 Months Special for Bug!</h1>
+    <p>
+        <a href="./countdown.html">
+            <button style="font-size: 20; background-color: #CA71BB; color: black; border-radius: 25px;">return</button>
+        </a>
+    </p>
+    <table class="table1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>            
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'frisbee'"><sup>1</sup>F</td>
+            <td></td>
+            <td></td>
+
+
+
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'frisbee'">R</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'jeans'"><sup>2</sup>J</td>
+            <td></td>
+            <td class="'frisbee'">I</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'covid'"><sup>3</sup>C</td>
+            <td></td>
+            <td></td>
+            <td class="'fleas'"><sup>4</sup>F</td>
+            <td class="'fleas'">L</td>
+            <td class="'jeans' 'fleas'">E</td>
+            <td class="'fleas'">A</td>
+            <td class="'fleas' 'frisbee'">S</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+          
+            <td></td>            
+            <td></td>
+            <td class="'covid'">O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'jeans'">A</td>
+            <td></td>
+            <td class="'frisbee'">B</td>
+            <td></td>
+            <td></td>
+
+        
+
+
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'covid'">V</td>
+            <td></td>
+            <td></td>            
+            <td></td>
+            <td></td>
+            <td class="'jeans'">N</td>
+            <td></td>
+            <td class="'frisbee'">E</td>
+            <td></td>
+            <td></td>
+
+
+
+        </tr>
+        <tr>
+            <td class="'grippers'"><sup>5</sup>G</td>
+            <td class="'grippers'">R</td>
+            <td class="'grippers' 'covid'">I</td>
+            <td class="'grippers'">P</td>
+            <td class ="'pasta' 'grippers'"><sup>6</sup>P</td>
+            <td class="'grippers'">E</td>
+            <td class="'grippers'">R</td>
+            <td class="'grippers' 'jeans'">S</td>
+            <td></td>
+            <td class="'frisbee'">E</td>            
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="'covid'">D</td>
+            <td></td>
+            <td class="'pasta'">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class ="'pasta' 'socksoff'"><sup>7</sup>S</td>
+            <td class="'socksoff'">O</td>
+            <td class="'socksoff'">C</td>
+            <td class="'socksoff'">K</td>
+            <td class="'socksoff'">S</td>
+            <td class="'socksoff'">O</td>
+            <td class="'socksoff'">F</td>
+            <td class="'socksoff'">F</td>
+
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="'pasta'">T</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+        </tr>
+        <tr>
+            <td class="'cinnamonbuns'"><sup>8</sup>C</td>
+            <td class="'cinnamonbuns'">I</td>
+            <td class="'cinnamonbuns'">N</td>
+            <td class="'cinnamonbuns'">N</td>
+            <td class="'pasta' 'cinnamonbuns'">A</td>
+            <td class="'cinnamonbuns'">M</td>
+            <td class="'cinnamonbuns'">O</td>
+            <td class="'cinnamonbuns'">N</td>
+            <td class="'cinnamonbuns'">B</td>
+            <td class="'cinnamonbuns'">U</td>
+            <td class="'cinnamonbuns'">N</td>
+            <td class="'cinnamonbuns'">S</td>
+        </tr>
+      
+    </table>
+    <h2>Enter Guess:</h2>
+    <form onsubmit="checkAnswer(event)">
+        <input type="text" placeholder="ur cute ;)" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <table class="table2">
+        <tr>
+            <td>Across</td>
+            <td>Down</td>
+        </tr>
+        <tr>
+            <td>1. Go fetch!</td>
+            <td>4. First time visiting</td>
+        </tr>
+        <tr>
+            <td nowrap>2. Easiest way to fluster you</td>
+            <td>5. You're secret talent</td>
+
+
+        </tr>
+        <tr>
+            <td nowrap>3. Our First Kiss</td>
+            <td>7. You can't avoid it</td>
+
+        </tr>
+
+        <tr>
+            <td nowrap>6. Your favorite dinner</td>
+
+            <td>8. Formula 1</td>
+        </tr>
+
+      
+    </table>
+</body>
+</html>

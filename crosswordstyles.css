@@ -23,9 +23,9 @@ td:empty{
 }
 
 sup {
-        color: black; /* Adjust the color if needed */
-        position: absolute; /* Position it absolutely */
-        transform: translate(-125%, -35%); /* Adjust position slightly */  
+        color: black; 
+        position: absolute; 
+        transform: translate(-125%, -35%);   
     
 }
 
